@@ -7,7 +7,7 @@
   <packaging>pom</packaging>
   <name>trend-investment</name>
   <modules>
-    <module>third-part-index-data-project</module>
+    <module>third-part-index-data-service</module>
   </modules>
 
   <properties>

@@ -8,7 +8,7 @@
     </parent>
 
     <groupId>com.github.codeqingkong</groupId>
-    <artifactId>third-part-index-data-project</artifactId>
+    <artifactId>third-part-index-data-service</artifactId>
     <packaging>jar</packaging>
     <name>third-part-index-data-project</name>
 
