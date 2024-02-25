@@ -19,6 +19,7 @@ dubbo:
   protocol:
     name: dubbo
     port: -1
+    serialization: hessian2
 
 management:
   endpoints:

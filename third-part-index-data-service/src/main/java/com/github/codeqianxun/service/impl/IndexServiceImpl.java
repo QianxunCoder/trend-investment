@@ -12,15 +12,14 @@ import java.io.IOException;
 public class IndexServiceImpl implements IndexService {
     /**
      * 获取第三方指数数据
-     * @param code 指数编号
      * @return 第三方指数数据
      */
-    @SentinelResource(value = "getIndex",
+    @SentinelResource(value = "getIndexCodes",
             blockHandler = "handleBlock",
             blockHandlerClass = GlobalExceptionHandler.class,
             fallback = "fallbackMethod",
             fallbackClass = GlobalExceptionHandler.class)
-    public String getIndex(String code) throws IOException {
-        return OkHttpUtils.get("http://127.0.0.1:8080/api/public/stock_zh_index_daily_em?symbol=" + code);
+    public String getIndexCodes() throws IOException {
+        return OkHttpUtils.get("http://127.0.0.1:8080/api/public/stock_zh_index_spot_em");
     }
 }

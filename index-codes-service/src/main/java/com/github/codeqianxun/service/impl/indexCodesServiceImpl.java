@@ -1,9 +1,12 @@
 package com.github.codeqianxun.service.impl;
 
+import com.github.codeqianxun.model.Index;
 import com.github.codeqianxun.service.IndexCodesService;
 import com.github.codeqianxun.service.IndexGatherStoreService;
 import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class indexCodesServiceImpl implements IndexCodesService {
@@ -12,10 +15,9 @@ public class indexCodesServiceImpl implements IndexCodesService {
 
     /**
      * 获取指数信息
-     * @param code 代码
      * @return 指数信息
      */
-    public String getIndex(String code) {
-        return indexGatherStoreService.getIndexInfo(code);
+    public List<Index> listIndexCodes() {
+        return indexGatherStoreService.listIndexCodes();
     }
 }

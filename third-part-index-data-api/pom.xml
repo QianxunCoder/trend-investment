@@ -12,5 +12,7 @@
     <packaging>jar</packaging>
     <name>third-part-index-data-api</name>
 
+    <dependencies>
 
+    </dependencies>
 </project>
