@@ -10,13 +10,15 @@ spring:
         server-addr: 127.0.0.1:8848
     sentinel:
       transport:
-        port: 8719
         dashboard: http://127.0.0.1:8858
 
 dubbo:
   registry:
     address: nacos://127.0.0.1:8848
     register-mode: instance
+  protocol:
+    name: dubbo
+    port: -1
 
 management:
   endpoints:

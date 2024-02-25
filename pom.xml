@@ -10,7 +10,9 @@
     <module>third-part-index-data-service</module>
     <module>third-part-index-data-api</module>
     <module>index-gather-store-service</module>
-    <module>common</module>
+    <module>commons</module>
+    <module>index-codes-service</module>
+    <module>index-gather-store-api</module>
   </modules>
 
   <properties>

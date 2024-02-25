@@ -1,20 +1,20 @@
 server:
-  port: 8081
+  port: 8083
 
 spring:
   application:
-    name: third-part-index-data-service
+    name: index-codes-service
   cloud:
     nacos:
       discovery:
-        server-addr: localhost:8848
+        server-addr: 127.0.0.1:8848
     sentinel:
       transport:
-        dashboard: localhost:8858
+        dashboard: http://127.0.0.1:8858
 
 dubbo:
   registry:
-    address: nacos://localhost:8848
+    address: nacos://127.0.0.1:8848
     register-mode: instance
   protocol:
     name: dubbo

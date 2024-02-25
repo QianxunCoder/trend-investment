@@ -8,8 +8,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableDubbo
-public class IndexGatherStoreApplication {
+public class IndexCodesApplication {
     public static void main(String[] args) {
-        SpringApplication.run(IndexGatherStoreApplication.class, args);
+        SpringApplication.run(IndexCodesApplication.class, args);
     }
 }

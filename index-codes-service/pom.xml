@@ -7,19 +7,15 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>index-gather-store-service</artifactId>
+    <artifactId>index-codes-service</artifactId>
     <packaging>jar</packaging>
-    <name>index-gather-store-service</name>
+    <name>index-codes-service</name>
 
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
@@ -40,11 +36,6 @@
         <dependency>
             <groupId>com.alibaba.csp</groupId>
             <artifactId>sentinel-apache-dubbo3-adapter</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.github.codeqianxun</groupId>
-            <artifactId>third-part-index-data-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.github.codeqianxun</groupId>
