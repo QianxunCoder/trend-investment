@@ -8,13 +8,15 @@ spring:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
+    sentinel:
+      transport:
+        port: 8719
+        dashboard: http://127.0.0.1:8858
 
 dubbo:
   registry:
     address: nacos://127.0.0.1:8848
     register-mode: instance
-  scan:
-    base-packages: com.github.codeqianxun.api.service.DemoService
 
 management:
   endpoints:
