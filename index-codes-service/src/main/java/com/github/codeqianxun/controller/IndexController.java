@@ -25,8 +25,8 @@ public class IndexController {
 //        return indexCodesService.getIndex(code);
 //    }
 
-    @GetMapping("/indexes")
-    @SentinelResource(value = "index",
+    @GetMapping("/codes")
+    @SentinelResource(value = "codes",
             blockHandler = "handleBlock",
             blockHandlerClass = GlobalExceptionHandler.class,
             fallback = "fallbackMethod",
